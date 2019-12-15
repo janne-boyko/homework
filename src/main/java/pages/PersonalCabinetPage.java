@@ -7,18 +7,18 @@ import org.openqa.selenium.support.FindBy;
 import parentPage.ParentPage;
 
 public class PersonalCabinetPage extends ParentPage {
-    @FindBy(id = "icon-profile")
-    private WebElement icon;
+    @FindBy(xpath = ".//h3[@class='cabinet-title']")
+    private WebElement title;
 
 
     public PersonalCabinetPage (WebDriver webDriver) {
         super(webDriver, "/profile/info");
     }
-    public boolean isIconDisplayed(){
-        return actionsWithOurElements.isElementDisplayed(icon);
+    public boolean isCabinetTitleDisplayed(){
+        return actionsWithOurElements.isElementDisplayed(title);
     }
 
-    public void checkIsAvatarPresent() {
-        Assert.assertTrue("Icon is not displayed", isIconDisplayed());
+    public void checkIsCabinetTitlePresent() {
+        Assert.assertTrue("Icon is not displayed", isCabinetTitleDisplayed());
     }
 }

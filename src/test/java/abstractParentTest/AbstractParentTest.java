@@ -1,5 +1,6 @@
 package abstractParentTest;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import libs.ConfigProperties;
 import org.aeonbits.owner.ConfigFactory;
 import org.apache.log4j.Logger;
@@ -55,7 +56,7 @@ public class AbstractParentTest {
 
     @After
     public void tearDown () {
-
+        webDriver.quit();
     }
 //    @Rule
 //    public TestWatcher watchman = new TestWatcher() {
@@ -83,7 +84,7 @@ public class AbstractParentTest {
 //                logger.error(e);
 //            }
 //        }
-//    }
+
 
     protected void checkExpectedResult(String message, boolean actualResult) {
         Assert.assertEquals(message, true, actualResult);

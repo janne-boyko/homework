@@ -23,7 +23,7 @@ public class LoginPage extends ParentPage {
 
     public void openPage() {
         try {
-            webDriver.get("http://front.cf-nam.com.dev11.vintagedev.com.ua/");
+            webDriver.get("http://front.cf-nam.com.dev11.vintagedev.com.ua/sign-in");
         } catch (Exception e){
             Assert.fail("Cannot work with browser");
         }
