@@ -29,10 +29,10 @@ public class LoginPage extends ParentPage {
         }
     }
 
-
     public void enterLoginInToInputLogin(String login) {
         actionsWithOurElements.enterTextInToInput(inputLogin,login);
     }
+
     public void enterPassInToInputPassword(String password) {
         actionsWithOurElements.enterTextInToInput(inputPass,password);
     }

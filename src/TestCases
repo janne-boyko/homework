@@ -9,7 +9,7 @@ Steps:
 6. Find "Submit" button
 7. Click on "Submit" button
 
-Expected result: Profile page is displayed. Valid name is displayed in the top right corner of the page
+Expected result: Profile page is displayed. Cabinet title is displayed
 
 
 Id-2: Login with invalid pass
@@ -23,7 +23,7 @@ Steps:
 6. Find "Submit" button
 7. Click on "Submit" button
 
-Expected result: Profile page is not displayed. Valid name is not displayed in the top right corner of the page
+Expected result: Profile page is not displayed.  Cabinet title is not displayed
 
 
 Id-3: Logout from account
@@ -37,76 +37,31 @@ Steps:
 Expected result: "Sign in" button in the header is displayed
 
 
-Id-3: Create new item in "Аппарат"
+Id-4: Sending feedback message
 
 Precondition: User must be logged in (use Id-1 test case)
 
 Steps:
-1. Find "Словари" item at the sidebar menu
-2. Click on "Словари" item
-3. Find "Аппарат" item at the treeview menu
-4. Click on "Аппарат" item
-5. Find "Add" button
-6. Click on "Add" button
-7. Find "Apparat number" field
-8. Input in "Apparat number" field "test" value
-9. Find "Apparat comment" field
-10. Input in "Apparat comment" field "comment" value
-11. Find "Создать" button
-12. Click on "Создать" button
+1. Find "Feedback" button at the sidebar menu
+2. Click "Feedback" button at the sidebar menu
+3. Find "Enter your message" field
+4. Input in "Enter your message" field "тест" value
+5. Find "Надіслати" button
+6. Click "Надіслати" button
 
-Expected result: New apparat "test" with comment "comment" is created
+Expected result: Success message is displayed
 
 
-Id-4: Delete item from "Тип запчастей"
+Id-5: Change personal phone number
 
 Precondition: User must be logged in (use Id-1 test case)
 
 Steps:
-1. Find "Словари" item at the sidebar menu
-2. Click on "Словари" item
-3. Find "Тип запчастей" item at the treeview menu
-4. Click on "Тип запчастей" item
-5. Find "Add" button
-6. Click on "Add" button
-7. Find "Spare type name" field
-8. Input in "Spare type name" field "test" value
-9. Find "Создать" button
-10. Click on "Создать" button
-11. Find "test" item in the table "Device list"
-12. Click on "test" item in the table "Device list"
-13. Find "Удалить" button
-14. Click on "Удалить" button
+1. Find "Phone" field
+2. Input in "Phone" field "0639999999" value
+3. Find "Зберегти" button
+4. Click "Зберегти" button
 
-Expected result: "test" item was deleted from table "Device list"
+Expected result: "0639999999" value is on "Phone" field
 
-
-Id-5: Delete item from "Тип запчастей"
-
-Precondition: User must be logged in (use Id-1 test case)
-
-Steps:
-1. Find "Словари" item at the sidebar menu
-2. Click on "Словари" item
-3. Find "Сотрудники" item at the treeview menu
-4. Click on "Сотрудники" item
-5. Find "Add" button
-6. Click on "Add" button
-7. Find "Worker surname" field
-8. Input in "Worker surname" field "Surname" value
-9. Find "Worker name" field
-10. Input in "Worker name" field "Name" value
-11. Find "Worker middle name" field
-12. Input in "Worker middle name" field "Middle-name" value
-13. Find "Worker phone" field
-14. Input in "Worker phone" field "111111111" value
-15. Find "Создать" button
-16. Click on "Создать" button
-17. Find "Surname Name Middle-name" item with phone "111111111" from "Сотрудники" list
-18. Click "Surname Name Middle-name" item with phone "111111111" from "Сотрудники" list
-19. Find "Worker phone" field
-20. Input in "Worker phone" field "000000000" value
-21. Find "Сохранить" button
-22. Click on "Сохранить" button
-
-Expected result: "Surname Name Middle-name" item now is with phone "000000000"
+Post-condition: clear phone field

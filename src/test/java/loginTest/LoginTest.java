@@ -11,7 +11,7 @@ public class LoginTest extends AbstractParentTest {
         loginPage.enterPassInToInputPassword("11111111");
         loginPage.clickOnButtonSubmit();
 
-        checkExpectedResult("Icon is not present"
+        checkExpectedResult(" Cabinet title isn't displayed"
                 , personalCabinetPage.isCabinetTitleDisplayed());
     }
 
@@ -22,7 +22,7 @@ public class LoginTest extends AbstractParentTest {
         loginPage.enterPassInToInputPassword("111111112");
         loginPage.clickOnButtonSubmit();
 
-        checkExpectedResult("Icon is present"
+        checkExpectedResult("Cabinet title is displayed"
                 , !personalCabinetPage.isCabinetTitleDisplayed());
     }
 }

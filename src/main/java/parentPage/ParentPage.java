@@ -27,17 +27,17 @@ public class ParentPage {
         expectedUrl = baseUrl + partUrl;
     }
 
-    public void checkCurrentUrl(){
-        try {
-            Assert.assertEquals(
-                    "URL is not expected",
-                    expectedUrl,
-                    webDriver.getCurrentUrl()
-            );
-
-        } catch (Exception e) {
-            logger.error("Cannot get URL "+ e);
-            Assert.fail("Cannot get URL "+ e);
-        }
-    }
+//    public void checkCurrentUrl(){
+//        try {
+//            Assert.assertEquals(
+//                    "URL is not expected",
+//                    expectedUrl,
+//                    webDriver.getCurrentUrl()
+//            );
+//
+//        } catch (Exception e) {
+//            logger.error("Cannot get URL "+ e);
+//            Assert.fail("Cannot get URL "+ e);
+//        }
+//    }
 }
