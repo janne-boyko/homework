@@ -1,7 +1,6 @@
 package changePhoneNumberTest;
 
 import abstractParentTest.AbstractParentTest;
-import org.junit.After;
 import org.junit.Test;
 
 public class ChangePhoneNumberTest extends AbstractParentTest {
@@ -14,8 +13,4 @@ public class ChangePhoneNumberTest extends AbstractParentTest {
                 personalCabinetPage.isPhoneNumberDisplayed("0639999999"));
 
     }
-//    @After
-//    public void deletePhone (){
-//        personalCabinetPage.deletePhone("0639999999");
-//    }
 }

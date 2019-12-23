@@ -63,5 +63,3 @@ Steps:
 4. Click "Зберегти" button
 
 Expected result: "0639999999" value is on "Phone" field
-
-Post-condition: clear phone field
